@@ -54,7 +54,7 @@ class UsersController extends Controller
                 $session->getFlashBag()->add('success',"User  $username created with success :D");
             }
         } else {
-            $session->getFlashBag()->add('error','User list not found existant :(');
+            $session->getFlashBag()->add('error','The User list not found existant :(');
         }
 
         return $this->forward('TekupUsersBundle:Users:list');
