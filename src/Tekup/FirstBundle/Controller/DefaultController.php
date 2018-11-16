@@ -10,4 +10,12 @@ class DefaultController extends Controller
     {
         return $this->render('@TekupFirst\Default\index.html.twig');
     }
+
+    public function testAction($nom,$prenom)
+    {
+        return $this->render('@App/Mon/index.html.twig',array(
+            'monNom'=>$nom,
+            'monPrenom'=>$prenom,
+        ));
+    }
 }

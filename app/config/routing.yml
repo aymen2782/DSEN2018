@@ -1,11 +1,6 @@
-tekup_users:
-    resource: "@TekupUsersBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-app_student:
-    resource: "@AppBundle/Controller/StudentController.php"
-    type:     annotation
+tekup_third:
+    resource: "@TekupThirdBundle/Resources/config/routing.yml"
+    prefix:   /third
 
 tekup_first:
     resource: "@TekupFirstBundle/Resources/config/routing.yml"

@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+
+{% block title %}AppBundle:Personne:list{% endblock %}
+
+{% block body %}
+{% for personne in personnes %}
+   {{ dump(personne) }}
+{% endfor %}
+
+    {#{% for pagination in range(1,nbPages) %}#}
+        {#<a href="{{ path('liste-personne',{page:pagination}) }}" >[{{ pagination }}]</a>#}
+    {#{% endfor %}#}
+{% endblock %}

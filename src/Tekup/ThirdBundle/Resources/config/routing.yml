@@ -1,0 +1,4 @@
+tekup_third_homepage:
+    path:     /
+    defaults: { _controller: TekupThirdBundle:Default:index }
+

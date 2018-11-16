@@ -1,3 +1,7 @@
 tekup_first_homepage:
     path:     /
     defaults: { _controller: TekupFirstBundle:Default:index }
+
+tekup_test_homepage:
+    path:     /test/{nom}/{prenom}
+    defaults: { _controller: TekupFirstBundle:Default:test }

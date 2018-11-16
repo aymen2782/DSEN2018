@@ -29,4 +29,20 @@ class DefaultController extends Controller
        return $this->render("@App/mesFichiers/index.html.twig");
     }
 
+    /**
+     * @Route("/test", name="test-action")
+     */
+    public function testRouteAction(){
+       $tab = array('aymen',
+                    'ahmed',
+                    'dhia',
+                    'Mohamed',
+                    'Fathi',
+           );
+       return $this->render('@App/mesFichiers/index.html.twig',array(
+           'tableau'=>$tab
+       ));
+    }
+
+
 }

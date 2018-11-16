@@ -1,1 +1,18 @@
-Bonjour DSEN
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ parent() }}
+    <hr>
+    Je suis le bloc du fils
+    {% for element in tableau %}
+        {% if loop.first %}
+            <h1>Il y a {{ loop.length }} personnes</h1> <br>
+        {% endif %}
+        {{ loop.index }} : {{ element }}<br>
+    {% endfor %}
+{% endblock %}
+
+{% block title %}
+   {{ parent() }} Template Fils
+ {% endblock %}
+

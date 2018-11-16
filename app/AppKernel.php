@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new Tekup\FirstBundle\TekupFirstBundle(),
             new Tekup\UsersBundle\TekupUsersBundle(),
+            new Tekup\ThirdBundle\TekupThirdBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
